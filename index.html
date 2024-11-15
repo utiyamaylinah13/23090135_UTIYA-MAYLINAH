@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teh Batik Indonesia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <h1>Teh Batik Indonesia</h1>
+            <!-- <div class="menu-toggle" onclick="toggleMenu()">☰ Menu -->
+        </div>
+        
+
+        <nav class="navbar">
+            <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+            <ul class="navbar-menu" id="navbarMenu">
+
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="home" class="welcome-section">
+        <h1>Selamat Datang di Teh Batik Indonesia</h1>
+        <p>Teh Batik Indonesia adalah teh unik yang terinspirasi oleh seni batik Nusantara,
+             menawarkan cita rasa khas dan pengalaman yang mencerminkan budaya Indonesia.</p>
+        <button onclick="showMore()">Selengkapnya</button>
+        <img src="Teh batik.png" alt="Teh batik indonesia logo"width="450" height="500">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>LAYANAN KAMI</h2>
+        <p>Kami menyediakan berbagai pilihan menu minuman yang dapat menyegarkan. 
+            Setiap produk menawarkan rasa yang unik dan menyegarkan tenggorokan.</p>
+        <div class="services-table">
+            <table>
+                <tr>
+                    <th>teh series</th>
+                    <th>Yakult series</th>
+                    <th>blend series</th>
+                </tr>
+                <tr>
+                    <td>lemon tea</td>
+                    <td>yakult mangga</td>
+                    <td>silverquen</td>
+                </tr>
+                <tr>
+                    <td>apel</td>
+                    <td>yakult melon</td>
+                    <td>taro</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2>PRODUK KAMI</h2>
+        <p>Teh Batik Indonesia adalah teh premium yang memadukan cita rasa autentik teh lokal dengan keindahan seni batik tradisional.
+             Setiap produk mencerminkan warisan budaya Nusantara melalui rasa khas dan kemasan bermotif batik klasik.</p>
+        <div class="product-list">
+            <div class="product-card">
+                <img src="teh.png.jpeg"width="300" height="300">
+                <h3>Teh series</h3>
+                <p> Teh Batik adalah pilihan tepat bagi penikmat teh . Dengan bahan baku daun teh pilihan dari perkebunan terbaik di Indonesia, 
+                    produk ini menawarkan rasa yang lembut namun kuat.Cocok dinikmati kapan saja sebagai teman bersantai atau berkumpul bersama keluarga..</p>
+            </div>
+            <div class="product-card">
+                <img src="yakullt.png.jpeg"width="300" height="300">
+                <h3>Yakult series</h3>
+                <p>Seri Yakult Teh Batik adalah inovasi yang memadukan kesegaran teh dengan manfaat probiotik dari Yakult. 
+                    Rasanya yang sedikit asam namun menyegarkan sangat cocok untuk pecinta teh modern yang mencari minuman yang menyehatkan. 
+                    Setiap tegukan memberi sensasi segar di tenggorokan, sekaligus menjaga kesehatan pencernaan</p>
+            </div>
+            <div class="product-card">
+                <img src="blend.png.jpeg"width="300" height="300">
+                <h3>Blend Series</h3>
+                <p>Bagi mereka yang menyukai rasa yang lebih ringan dan lembut, Teh Batik Seri Bland adalah pilihan yang sempurna. 
+                    Seri ini menawarkan kombinasi teh yang lebih halus, disertai aroma bunga dan buah ringan yang menenangkan. 
+                    Rasa teh ini ideal untuk dinikmati pada sore hari, memberi ketenangan dan relaksasi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>KONTAK KAMI</h2>
+    <p>Jika Anda memiliki pertanyaan atau ingin mempelajari lebih lanjut tentang produk kami, jangan ragu untuk menghubungi kami!</p>
+    <div class="contact-container">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div class="contact-card">
+                <p><strong>Alamat:</strong> Jalan Nusantara No.123, Jakarta, Indonesia</p>
+            </div>
+            <div class="contact-card">
+                <p><strong>Telepon:</strong> +62 812 3456 7890</p>
+            </div>
+            <div class="contact-card">
+                <p><strong>Email:</strong> @tehbatikindonesia.com</p>
+            </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <form action="submit_contact_form.php" method="post" class="contact-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+            
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            
+            <button type="submit" class="contact-button">Kirim Pesan</button>
+        </form>
+    </div>
+</section>
+
+ 
+    <script src="script.js"></script>
+</body>
+</html>
